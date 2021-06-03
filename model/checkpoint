@@ -1,0 +1,2 @@
+model_checkpoint_path: "BertPretrained-210603-130-3-100-5.tf"
+all_model_checkpoint_paths: "BertPretrained-210603-130-3-100-5.tf"
