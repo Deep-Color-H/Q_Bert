@@ -36,8 +36,6 @@
 
  위와 같은 과정에 의해 533,580개 article(documents) 중 359,497(135,099 + 224,398)개 documents를 선별하였음
  Total Sentences : 3,899,088개 문장
- Total Word Count :
- Total Unique Word Count :
 
 
  ### Tokenize
@@ -61,3 +59,24 @@ Parameter는
 
 Q1. 한국어 문장 분리기 라이브러리가 존재했다 ! kss
 Q2. 한자, 일본어, 특수문자 등을 제거하지 않았다. ~와 ⁓을 구분함.
+
+  ### Pretrained
+
+-Bert-Base
+
+vocab_size = 32000
+max_seq_len = 256
+num_layers = 12
+d_model = 768
+dff = d_model * 4 = 3072
+num_heads = 12
+dropout = .1
+
+ - q-small
+vocab_size = 32000
+max_seq_len = 130
+num_layers = 6
+d_model = 384
+dff = d_model * 2 = 768
+num_heads = 6
+dropout = .1
