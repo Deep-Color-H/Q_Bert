@@ -2,17 +2,14 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
     "from tokenizers import BertWordPieceTokenizer\n",
     "\n",
     "import pickle\n",
-    "import os\n",
-    "\n",
-    "# ver2.0_ 한국어 문장 분리기 라이브러리 사용\n",
-    "import kss"
+    "import os"
    ]
   },
   {
@@ -28,13 +25,16 @@
     "    strip_accents=False, # Must be False if cased model\n",
     "    lowercase=False,\n",
     "    wordpieces_prefix=\"##\"\n",
-    "    # Default Setting\n",
-    "#     , unk_token = '[UNK]'\n",
-    "#     , seq_token = '[SEP]'\n",
-    "#     , cls_token = '[CLS]'\n",
-    "#     , pad_token = '[PAD]'\n",
-    "#     , mask_token = '[MASK]'\n",
     ")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "?BertWordPieceTokenizer"
    ]
   },
   {
@@ -43,8 +43,10 @@
    "metadata": {},
    "outputs": [],
    "source": [
+    "\n",
     "data_path = 'C://Users/LGCNS/Documents/GitHub/Q_Bert/dt'\n",
     "\n",
+    "# corpus_file = [ os.path.join(data_path, 'train_wiki_sentence1.txt') ]\n",
     "corpus_file = [ os.path.join(data_path, 'train_wiki_sentence1.txt'), os.path.join(data_path, 'train_wiki_sentence2.txt') ]\n",
     "limit_alphabet = 6000\n",
     "vocab_size = 32000"
