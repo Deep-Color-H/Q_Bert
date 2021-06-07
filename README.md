@@ -14,6 +14,7 @@
  - Pooler Layer는 모든 encoder Layer가 끝난 후에 첫 번째 토큰의 결과를 가져와서
    Dense Layer로 계산한 다음 Fine Tuning으로 쓰는 것 *Done*
 2. 전처리 Library 사용 (문장 분절, 2Byte->1Byte, 단어 분절 등)
+   wiki_detokenizer, ftfy
 3. Max_Masked_Seq_Len를 이용한 Masked Batch Function 만들기, gather_nd, Loss function
 4. Layer Normalization
 5. 분산처리
