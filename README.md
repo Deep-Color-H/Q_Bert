@@ -14,14 +14,14 @@
  - Pooler Layer는 모든 encoder Layer가 끝난 후에 첫 번째 토큰의 결과를 가져와서
    Dense Layer로 계산한 다음 Fine Tuning으로 쓰는 것 *Done*
 2. 전처리 Library 사용 (문장 분절, 2Byte->1Byte, 단어 분절 등)
-   wiki_detokenizer, ftfy
+   wiki_detokenizer, ftfy *Done*
 3. Max_Masked_Seq_Len를 이용한 Masked Batch Function 만들기, gather_nd, Loss function
-4. Layer Normalization
+4. Layer Normalization *Done*
 5. 분산처리
 6. TPU
-7. tf.record
+7. tf.record *Done*
 8. 잘 한 사람 코드 보고 배우기
-9. Token화 하고 문장 잇기 (효율성)
+9. Token화 하고 문장 잇기 (효율성) *Done*
 
 - Longer sequences are disproportionately expensive because attention is quadratic to the sequence length.
 To speed up pretraining in our experiments,
