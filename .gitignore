@@ -3,3 +3,5 @@ dt_v1/*
 .ipynb_checkpoints
 BIN/*
 model/*
+logs/
+training_checkpoints/*

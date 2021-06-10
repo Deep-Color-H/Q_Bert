@@ -15,7 +15,7 @@
    Dense Layer로 계산한 다음 Fine Tuning으로 쓰는 것 *Done*
 2. 전처리 Library 사용 (문장 분절, 2Byte->1Byte, 단어 분절 등)
    wiki_detokenizer, ftfy *Done*
-3. Max_Masked_Seq_Len를 이용한 Masked Batch Function 만들기, gather_nd, Loss function
+3. Max_Masked_Seq_Len를 이용한 Masked Batch Function 만들기, gather_nd, Loss function *Done*
 4. Layer Normalization *Done*
 5. 분산처리
 6. TPU
