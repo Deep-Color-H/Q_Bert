@@ -4,4 +4,4 @@ dt_v1/*
 BIN/*
 model/*
 logs/
-training_checkpoints/*
+training_checkpoints*
